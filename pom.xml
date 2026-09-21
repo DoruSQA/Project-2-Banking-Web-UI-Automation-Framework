@@ -14,7 +14,6 @@
 		<password>defaultPassword</password>
 	</properties>
 
-
 	<dependencies>
 
 		<!-- Selenium -->
