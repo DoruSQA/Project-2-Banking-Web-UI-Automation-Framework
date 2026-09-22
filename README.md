@@ -1,4 +1,4 @@
-# 🏦 Project 1 – Banking-App UI Testing Automation Framework
+# 🏦 Project 2 – Banking-App UI Testing Automation Framework
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
 ![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium)
