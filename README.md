@@ -28,7 +28,7 @@
 
 ---
 
-## 📖 Overview
+## 📖 Overview 
 
 - This automation framework is built using Java, Selenium WebDriver, TestNG, Maven, Gson, Logback and Extent Reports.
 - The framework automates Authentication, Banking Account Management, Funds Management, Bill Payments, Transaction and Loan Management workflows of the banking application.
