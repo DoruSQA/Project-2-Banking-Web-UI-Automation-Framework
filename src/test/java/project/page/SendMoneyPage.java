@@ -19,7 +19,7 @@ public class SendMoneyPage extends BasePage {
 		logger.debug("SendMoneyPage initialized");
 	}
 
-	// Locator
+	// Page Locator
 	private By sendMoneyPannel = By.xpath("//form[@data-testid='send-money-form']");
 	private By selectAccountField = By.xpath("//span[text()='Select account']");
 	private By selectPayeeField = By.xpath("//span[text()='Select a payee']");
@@ -33,7 +33,6 @@ public class SendMoneyPage extends BasePage {
 	private By sendMoneyAmount = By.xpath("//span[@data-testid='confirm-amount']");
 	private By sendMoneyErrorMessage = By.xpath("//div[@data-testid='send-money-error']");
 	 
-	// Dynamic Locator
 	private By accountOptionLocator(String option)
 	{
 		return By.xpath("//div[contains(text(),'" + option + "')]");

@@ -32,7 +32,7 @@ public class SendMoneyTests extends BaseTest {
 		sendMoneyPage.clickAcceptConfirmationButton();
 		 
 		// Verify the send money receipt and transaction details
-		softAssertion.assertTrue(sendMoneyPage.isSendMoneyReceipDisplayed(), "Receipt is not displayed");
+		softAssertion.assertTrue(sendMoneyPage.isSendMoneyReceipDisplayed());
 		softAssertion.assertEquals(sendMoneyPage.getSendMoneyAccountName(), sendMoneyWithValidDetails.getAccount());
 		softAssertion.assertEquals(sendMoneyPage.getSendMoneyPayeeName(), sendMoneyWithValidDetails.getPayee());
 		softAssertion.assertEquals(sendMoneyPage.getSendMoneyAmount(), "$" + sendMoneyWithValidDetails.getAmount() + ".00");

@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
 		logger.debug("LoginPage initialized");
 	}
 
-	// Locator
+	// Page Locator
 	private By usernameInputBox = By.xpath("//input[@id='login-username']");
 	private By passwordInputBox = By.xpath("//input[@id='login-password']");
 	private By loginButton = By.xpath("//button[@data-testid='login-submit-btn']");

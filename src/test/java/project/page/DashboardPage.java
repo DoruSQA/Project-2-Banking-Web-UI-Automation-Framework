@@ -18,7 +18,7 @@ public class DashboardPage extends BasePage {
 		logger.debug("DashboardPage initialized");
 	}
 
-	// Locator
+	// Page Locator
 	By frozenAccountMsg = By.xpath("//div[@data-testid='frozen-account-banner']");
 	By accountsButton = By.xpath("//a[@data-testid='sidebar-link-accounts']//span");
 	By billPayButton = By.xpath("//a[@data-testid='sidebar-link-bill-pay']");
@@ -63,6 +63,5 @@ public class DashboardPage extends BasePage {
 		ElementWaits.waitForVisibility(driver, billPayButton).click();
 	}
 
-	// Page Behavior
 	 
 }

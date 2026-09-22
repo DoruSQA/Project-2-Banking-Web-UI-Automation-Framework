@@ -19,7 +19,7 @@ public class TransferMoneyPage extends BasePage {
 		logger.debug("TransferMoneyPage initialized");
 	}
 
-	// Static Locator
+	// Page Locator
 	private By transferMoneyPannel = By.xpath("//form[@data-testid='transfer-form']");
 	private By selectPayerAccountFiled = By.xpath("//button[@id='transfer-from-trigger']");
 	private By selectPayeeAccountFiled = By.xpath("//button[@id='transfer-to-trigger']");
@@ -33,7 +33,6 @@ public class TransferMoneyPage extends BasePage {
 	private By transferAmount = By.xpath("//span[@data-testid='confirm-amount']");
 	private By transferErrorMsg = By.xpath("//div[@data-testid='transfer-error-message']");
 	 
-	// Dynamic Locator
 	private By transferMoneyPayerLocator(String account)
 	{
 		return By.xpath("//div[contains(text(),'" + account + "')]");

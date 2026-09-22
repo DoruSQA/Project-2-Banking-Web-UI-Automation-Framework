@@ -9,7 +9,7 @@ import project.expected.ApllyLoanExpected;
 import dorrusqa.testdata.TestDataProvider;
 import dorrusqa.model.*;
 
-public class LoanFeatureTests extends BaseTest {
+public class LoanTests extends BaseTest {
 
 	@BeforeMethod(alwaysRun = true)
 	public void setUpLoan() {
@@ -43,10 +43,8 @@ public class LoanFeatureTests extends BaseTest {
 		applyLoanPage.fillLoanDetailsWithoutLoanType(loanWithoutLoanType);
 
 		// Verify the loan type validation
-		softAssertion.assertFalse(applyLoanPage.isConfirmationLoanReceipDisplayed(),
-				"Confirmation receipt is displayed");
-		softAssertion.assertEquals(applyLoanPage.getLoanErrorMessage(), ApllyLoanExpected.FAILED_MSG_WITHOUT_LOAN_TYPE,
-				"Error message doesn't match");
+		softAssertion.assertFalse(applyLoanPage.isConfirmationLoanReceipDisplayed());
+		softAssertion.assertEquals(applyLoanPage.getLoanErrorMessage(), ApllyLoanExpected.FAILED_MSG_WITHOUT_LOAN_TYPE,);
 		softAssertion.assertAll();
 	}
 

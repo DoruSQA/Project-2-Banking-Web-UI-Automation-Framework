@@ -18,7 +18,7 @@ public class TransactionPage extends BasePage {
 		logger.debug("TransactionPage initialized");
 	}
 
-	// Locator
+	// Page Locator
 	private By searchInputBox = By.xpath("//input[@id='all-txn-search']");
 	private By tablePannel = By.xpath("//tbody");
 	private By transactionDescriptionName = By.xpath("//tbody//td[@data-testid='all-txn-description']");
@@ -63,6 +63,5 @@ public class TransactionPage extends BasePage {
 		return ElementWaits.waitForVisibility(driver, transactionAmount).getText();
 	}
 	 
-	// Page Behavior
 	 
 }

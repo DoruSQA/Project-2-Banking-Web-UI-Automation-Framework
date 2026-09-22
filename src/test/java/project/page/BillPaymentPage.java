@@ -19,7 +19,7 @@ public class BillPaymentPage extends BasePage {
 		logger.debug("BillPaymentPage initialized");
 	}
 
-	// Static Locator
+	// Page Locator
 	private By billPaymentPannel = By.xpath("//div[@data-testid='bill-pay-page']");
 	private By fromAccountLabel = By.xpath("//label[text()='From Account']");
 	private By billerLabel= By.xpath("//input[@id='biller-search-input']");
@@ -34,7 +34,6 @@ public class BillPaymentPage extends BasePage {
 	private By billPayErrorMsg = By.xpath("//div[@data-testid='bill-pay-error']");
 	private By billPaymentCofirmationBox = By.xpath("//div[@data-testid='bill-pay-confirm-dialog']");
 
-	// Dynamic Locator
 	private By bakingAccountOptionLocator(String option)
 	{
 		return By.xpath("//div[contains(text(),'" +option   + "')]");

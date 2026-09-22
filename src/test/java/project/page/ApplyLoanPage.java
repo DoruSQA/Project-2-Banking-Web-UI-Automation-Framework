@@ -19,7 +19,7 @@ public class ApplyLoanPage extends BasePage {
 		logger.debug("ApplyLoanPage initialized");
 	}
 
-	// Static Locator
+	// Page Locator
 	private By applyForLoanBtn = By.xpath("//button[@data-testid='open-apply-loan-btn']");
 	private By applyLoanPannel = By.xpath("//div[@data-testid='apply-loan-dialog']");
 	private By selectLoanTypeBtn = By.xpath("//button[@id='loan-type-trigger']");
@@ -37,7 +37,6 @@ public class ApplyLoanPage extends BasePage {
 	private By loanAccount = By.xpath("//span[@data-testid='confirm-loan-account']");
 	private By loanErrorMsg = By.xpath("//div[@data-testid='apply-loan-error-message']");
 	 
-	// Dynamic Locator
 	private By loanTypeOptionLocator(String option)
 	{
 		return By.xpath("//div[text()='" + option + "']");

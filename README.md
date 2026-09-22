@@ -82,10 +82,9 @@ The framework follows the Page Object Model (POM) design pattern.
 Each Page Object represents a specific page or functional area of the application
 and is structured around the following responsibilities:
 
-- **Locators** – static and dynamic locators used to identify UI elements.
+- **Page Locators** – static and dynamic locators used to identify UI elements.
 - **Page Actions** – low-level methods for interacting with individual UI elements.
 - **Page Behaviors** – higher-level methods that combine multiple page actions to implement specific user workflows.
-- **Element Waits** – a reusable wrapper layer around Selenium explicit waits, ensuring that web elements reach the required state before interaction.
 
 In addition, each Page Object contains:
 - WebDriver instance

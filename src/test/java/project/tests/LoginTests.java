@@ -22,10 +22,10 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(userWIthValidCredentials);
 
         // Verify successful authentication and dashboard details
-        softAssertion.assertTrue(dashboardPage.isSideMenuDisplayed(), "Side Menu is not displayed");
-        softAssertion.assertEquals(dashboardPage.getUrl(), DashboardExpected.URL, "URL of the page not matching");
-        softAssertion.assertEquals(dashboardPage.getPageHeading(), DashboardExpected.PAGE_HEADING, "Page Heading is not matching");
-        softAssertion.assertTrue(dashboardPage.isLogoutButtonDisplayed(), "Logout button is not displayed");
+        softAssertion.assertTrue(dashboardPage.isSideMenuDisplayed());
+        softAssertion.assertEquals(dashboardPage.getUrl(), DashboardExpected.URL);
+        softAssertion.assertEquals(dashboardPage.getPageHeading(), DashboardExpected.PAGE_HEADING);
+        softAssertion.assertTrue(dashboardPage.isLogoutButtonDisplayed());
         softAssertion.assertAll();
     }
 
@@ -38,8 +38,8 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(userWIthWrongPassword);
 
         // Verify login failure and expected error message
-        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_WRONG_PASSWORD,"Error message is not matching");
-        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL, "Page URL not matching");
+        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_WRONG_PASSWORD);
+        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL);
         softAssertion.assertAll();
     }
 
@@ -51,8 +51,8 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(userWIthWrongUsername);
 
         // Verify login failure and expected error message
-        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_WRONG_USERNAME,"Error message is not matching");
-        softAssertion.assertEquals(loginPage.getUrl(), LoginExpected.URL, "Page URL not matching");
+        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_WRONG_USERNAME);
+        softAssertion.assertEquals(loginPage.getUrl(), LoginExpected.URL);
         softAssertion.assertAll();
     }
 
@@ -64,8 +64,8 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(userWIthEmptyUsername);
 
         // Verify login failure and expected error message
-        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_EMPTY_USERNAME,"Error message is not matching");
-        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL, "Page URL not matching");
+        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_EMPTY_USERNAME);
+        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL);
         softAssertion.assertAll();
     }
 
@@ -77,8 +77,8 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(userWIthEmptyPassword);
 
         // Verify login failure and expected error message
-        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_EMPTY_PASSWORD,"Error message is not matching");
-        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL, "Page URL not matching");
+        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_WITH_EMPTY_PASSWORD);
+        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL);
         softAssertion.assertAll();
     }
 
@@ -90,8 +90,8 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(lockedOutUser);
 
         // Verify login failure with the expected locked-out account message and URL
-        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_LOCKED_OUT_USER,"Error message is not matching");
-        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL, "Page URL not matching");
+        softAssertion.assertEquals(loginPage.getFailedLoginErrorMessage(),LoginExpected.FAILED_MSG_LOCKED_OUT_USER);
+        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL);
         softAssertion.assertAll();
     }
     
@@ -103,8 +103,8 @@ public class LoginTests extends BaseTest {
         loginPage.authentication(frozenUser);
 
         // Verify the frozen account message and expected redirect URL
-        softAssertion.assertTrue(dashboardPage.isFrozenAccountMsgDisplayed(), "Frozen account message is not displayed");
-        softAssertion.assertEquals(loginPage.getUrl(),DashboardExpected.URL, "Page URL not matching");
+        softAssertion.assertTrue(dashboardPage.isFrozenAccountMsgDisplayed());
+        softAssertion.assertEquals(loginPage.getUrl(),DashboardExpected.URL);
         softAssertion.assertAll();
     }
 
@@ -118,14 +118,14 @@ public class LoginTests extends BaseTest {
         
         // Verify logout redirects to the login page
         Assert.assertTrue(loginPage.isLoginButtonVisible());
-        Assert.assertEquals(loginPage.getUrl(),LoginExpected.URL, "URL of the page not matching");
+        Assert.assertEquals(loginPage.getUrl(),LoginExpected.URL);
         
         // Attempt to access the dashboard directly after logout
         loginPage.navigateTo(DashboardExpected.URL);
         
         // Verify unauthenticated users remain on the login page
         softAssertion.assertTrue(loginPage.isLoginButtonVisible());
-        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL, "URL of the page not matching");
+        softAssertion.assertEquals(loginPage.getUrl(),LoginExpected.URL);
         softAssertion.assertAll();
     }
 }

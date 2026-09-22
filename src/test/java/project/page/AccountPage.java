@@ -19,7 +19,7 @@ public class AccountPage extends BasePage {
 		logger.debug("AccountPage initialized");
 	}
 
-	// Static Locator
+	// Page Locator
 	private By frozenAccountMsg = By.xpath("//div[@data-testid='frozen-account-banner']");
 	private By addAccountButton = By.xpath("//button[@data-testid='add-account-btn']");
 	private By addAccountButtonForm = By.xpath("//button[@data-testid='save-account-form-btn']");
@@ -36,7 +36,6 @@ public class AccountPage extends BasePage {
 	private By formAccountTypeSelect = By.xpath("//*[text()='Account Type']");
 	private By formCancelBtn = By.xpath("//button[text()='Cancel']");
 	
-	// Dynamic Locator
 	private By formCreditOptionLocator(String option)
 	{
 		return By.xpath("//div[text()='" + option + "']");

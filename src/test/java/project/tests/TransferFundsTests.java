@@ -32,9 +32,9 @@ public class TransferFundsTests extends BaseTest {
 		transferMoneyPage.clickConfirmTransferButton();
 		
 		// Verify the transfer receipt details
-		softAssertion.assertEquals(transferMoneyPage.getTransferPayerName(), transferWithValidDetails.getPayerAccount(), "Payer account doesn't match");
-		softAssertion.assertEquals(transferMoneyPage.getTransferPayeeName(), transferWithValidDetails.getPayeeAccount(), "Payee account doesn't match");
-		softAssertion.assertEquals(transferMoneyPage.getTransferAmount(), "$" + transferWithValidDetails.getAmount() + ".00", "Amount paid doesn't match");
+		softAssertion.assertEquals(transferMoneyPage.getTransferPayerName(), transferWithValidDetails.getPayerAccount());
+		softAssertion.assertEquals(transferMoneyPage.getTransferPayeeName(), transferWithValidDetails.getPayeeAccount());
+		softAssertion.assertEquals(transferMoneyPage.getTransferAmount(), "$" + transferWithValidDetails.getAmount() + ".00");
 		softAssertion.assertAll();
 	}
 	
@@ -46,7 +46,7 @@ public class TransferFundsTests extends BaseTest {
 		transferMoneyPage.fillTransferMoneyDetails(transferWithEmptyAmount);
 		
 		// Verify the empty amount validation
-		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITH_EMPTY_AMOUNT, "Error message doesn't match");
+		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITH_EMPTY_AMOUNT);
 		softAssertion.assertFalse(transferMoneyPage.isConfirmationPannelDisplayed());
 		softAssertion.assertAll();
 		
@@ -78,7 +78,7 @@ public class TransferFundsTests extends BaseTest {
 		transferMoneyPage.fillTransferMoneyWithoutSourceAccount(transferWithValidDetails);
 		
 		// Verify the source account validation
-		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITHOUT_SELECTING_SOURCE_ACCOUNT, "Error message doesn't match");
+		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITHOUT_SELECTING_SOURCE_ACCOUNT);
 		softAssertion.assertFalse(transferMoneyPage.isConfirmationPannelDisplayed());
 		softAssertion.assertAll();
 	}
@@ -91,7 +91,7 @@ public class TransferFundsTests extends BaseTest {
 		transferMoneyPage.fillTransferMoneyWithoutDestinationAccount(transferWithValidDetails);
 				
 		// Verify the destination account validation
-		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITHOUT_SELECTING_DESTINATION_ACCOUNT, "Error message doesn't match");
+		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITHOUT_SELECTING_DESTINATION_ACCOUNT);
 		softAssertion.assertFalse(transferMoneyPage.isConfirmationPannelDisplayed());
 		softAssertion.assertAll();
 	}
@@ -105,7 +105,7 @@ public class TransferFundsTests extends BaseTest {
 		transferMoneyPage.fillTransferMoneyDetails(transferWithNegativeAmount);
 				
 		// Verify the negative amount validation
-		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITH_NEGATIVE_AMOUNT, "Error message doesn't match");
+		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITH_NEGATIVE_AMOUNT);
 		softAssertion.assertFalse(transferMoneyPage.isConfirmationPannelDisplayed());
 		softAssertion.assertAll();
 	}
@@ -118,7 +118,7 @@ public class TransferFundsTests extends BaseTest {
 		transferMoneyPage.fillTransferMoneyDetails(transferWithPastDate);
 		
 		// Verify the past date validation
-		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITH_PAST_DATE, "Error message doesn't match");
+		softAssertion.assertEquals(transferMoneyPage.getTransferErrorMsg(), TransferMoneyExpected.FAILED_MSG_WITH_PAST_DATE);
 		softAssertion.assertFalse(transferMoneyPage.isConfirmationPannelDisplayed());
 		softAssertion.assertAll();
 	}
