@@ -1,4 +1,4 @@
-name: SauceDemo Module Tests
+name: Module Tests
 
 on:
   workflow_dispatch:
