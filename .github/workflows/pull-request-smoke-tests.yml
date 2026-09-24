@@ -1,0 +1,32 @@
+name: Pull Request - Smoke Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run Smoke Tests
+        run: mvn clean test -DtestSuite="Smoke" -Dexecution="GitHub Actions"
+
+      - name: Upload Extent Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-report-smoke
+          path: reports/
+          if-no-files-found: warn

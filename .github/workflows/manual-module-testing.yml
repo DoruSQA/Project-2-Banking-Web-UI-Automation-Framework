@@ -1,0 +1,42 @@
+name: SauceDemo Module Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      testSuite:
+        description: 'Select the test module to execute'
+        required: true
+        type: choice
+        options:
+          - Authentication
+          - Funds Management
+          - Transaction
+          - Loan Management
+          - Banking Account
+          - Bill Payments
+
+jobs:
+  module-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run ${{ inputs.testSuite }} Tests
+        run: mvn clean test -DtestSuite="${{ inputs.testSuite }}" -Dexecution="GitHub Actions"
+
+      - name: Upload Extent Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-report-${{ inputs.testSuite }}
+          path: reports/
+          if-no-files-found: warn
