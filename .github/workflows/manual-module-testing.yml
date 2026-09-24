@@ -40,3 +40,4 @@ jobs:
           name: extent-report-${{ inputs.testSuite }}
           path: reports/
           if-no-files-found: warn
+
