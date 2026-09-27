@@ -9,6 +9,7 @@
 
 
 > **Note 1:** Some reusable framework components are maintained and included as a local JAR dependency.
+
 > **Note 2:** This project is part of my personal QA Automation portfolio.
 
 ## Table of Contents
