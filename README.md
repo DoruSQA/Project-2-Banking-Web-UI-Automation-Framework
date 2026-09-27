@@ -67,9 +67,7 @@
 The framework is organized into dedicated layers, each with a clear responsibility to improve
 maintainability, reusability, and separation of concerns.
 
-### Layers
-
-| Layer / Component | Purpose |
+| Layer | Purpose |
 |-------------------|---------|
 | Base | Provides common setup and reusable functionality for all tests |
 | Page | Encapsulates page-specific elements and user interactions |
@@ -79,42 +77,47 @@ maintainability, reusability, and separation of concerns.
 | Utils | Provides shared utilities for reporting, data reading, and custom element waits |
 
 
-### Page Object Model
+## Test Execution
 
-The framework follows the Page Object Model (POM) design pattern.
+### Run All Tests (Default - Smoke Suite)
 
-Each Page Object represents a specific page or functional area of the application
-and is structured around the following responsibilities:
+```bash
+# All Tests (40 tests)
+mvn clean test
+```
 
-- **Page Locators** – static and dynamic locators used to identify UI elements.
-- **Page Actions** – low-level methods for interacting with individual UI elements.
-- **Page Behaviors** – higher-level methods that combine multiple page actions to implement specific user workflows.
+### Run Specific Test Suite
 
-In addition, each Page Object contains:
-- WebDriver instance
-- Logger
-- Constructor
+```bash
+# Smoke Tests (7 tests)
+mvn clean test -DtestSuite=Smoke
 
-<details>
-<summary>📄 <strong>View AccountPage implementation example</strong></summary>
+# Regression Tests (14 tests)  
+mvn clean test -DtestSuite=Regression
+```
+### Run Tests with different environments
 
-![AccountPage POM](docs/pom-exemple.png)
+```bash
+# Select qa environment
+mvn clean test -Denv=qa
 
-</details>
+# Select stage environment
+mvn clean test -Denv=stage 
+```
 
-### Test Data Management
+### Run Tests with Browser Selection
 
-The framework separates test data from test implementation through static, dynamic, and model-based test data management.
+```bash
+# Chrome browser (default)
+mvn clean test -DbrowserName=chrome
 
-| Type | Description | Implementation |
-|---|---|---|
-| **Static Test Data** | Static test data is stored in JSON files and loaded at runtime. | `TestDataFactory` |
-| **Dynamic Test Data** | Dynamic test data is generated at runtime for each test execution. | `TestDataGenerator` |
-| **Model-Based Test Data** | Test data is represented through dedicated Java model classes. | `LoginUser`, `TransactionUser` |
+# Firefox browser
+mvn clean test -DbrowserName=firefox
 
-#### ⭐ Key Principle
+# Edge browser
+mvn clean test -DbrowserName=edge
+```
 
-Test data is separated from test logic, reducing hardcoded values within test methods.
 
 ## Test Execution
 
@@ -127,6 +130,7 @@ The framework supports execution against multiple environments using dedicated c
 #### QA Environment
 
 ```bash
+#
 mvn clean test -Denv=qa
 ```
 - Uses: src/test/resources/environments/qa-env.properties
