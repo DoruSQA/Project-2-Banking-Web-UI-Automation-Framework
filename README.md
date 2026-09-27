@@ -58,7 +58,7 @@
 - **Element Waits:** Custom wait mechanisms for reliable interaction with web elements.
 - **Test Reporting:** Detailed reports using Extent Reports.
 - **Execution Logging:** Structured execution logs using Logback.
-- **Test execution control through Maven parameters**
+- Test execution control through **Maven parameters**
 
 
 <a id="framework-architecture"></a>
