@@ -62,68 +62,78 @@ public abstract class BaseTest {
 
 	public WebDriver createDriver() {
 
-		logger.info("Creating WebDriver instance");
+    logger.info("Creating WebDriver instance");
 
-		WebDriver driver = null;
-		MutableCapabilities options = null;
+    WebDriver driver = null;
+    MutableCapabilities options = null;
 
-		String browser = System.getProperty("browserName", "chrome");
+    String browser = System.getProperty("browserName", "chrome");
 
-		if (browser.equalsIgnoreCase("chrome")) {
+    if (browser.equalsIgnoreCase("chrome")) {
 
-			ChromeOptions chromeOptions = new ChromeOptions();
+        ChromeOptions chromeOptions = new ChromeOptions();
 
-			// Chrome Browser configuration
-			chromeOptions.addArguments("--start-maximized");
-			chromeOptions.addArguments("--disable-notifications");
-			chromeOptions.addArguments("--disable-popup-blocking");
-			chromeOptions.addArguments("--disable-translate");
-			chromeOptions.addArguments("--incognito");
+        // Chrome Browser configuration
+        if (System.getenv("CI") != null) {
+            chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-dev-shm-usage");
+            chromeOptions.addArguments("--window-size=1920,1080");
+        } else {
+            chromeOptions.addArguments("--start-maximized");
+        }
 
-			chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--disable-popup-blocking");
+        chromeOptions.addArguments("--disable-translate");
+        chromeOptions.addArguments("--incognito");
 
-			Map<String, Object> prefs = new HashMap<>();
-			prefs.put("credentials_enable_service", false);
-			prefs.put("profile.password_manager_enabled", false);
-			prefs.put("profile.password_manager_leak_detection", false);
+        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
-			chromeOptions.setExperimentalOption("prefs", prefs);
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        prefs.put("profile.password_manager_leak_detection", false);
 
-			options = chromeOptions;
+        chromeOptions.setExperimentalOption("prefs", prefs);
 
-		} else if (browser.equalsIgnoreCase("firefox")) {
+        options = chromeOptions;
 
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
+    } else if (browser.equalsIgnoreCase("firefox")) {
 
-			firefoxOptions.addArguments("--start-maximized");
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
 
-			firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        firefoxOptions.addArguments("--start-maximized");
 
-			options = firefoxOptions;
+        firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
-		} else if (browser.equalsIgnoreCase("edge")) {
+        options = firefoxOptions;
 
-			EdgeOptions edgeOptions = new EdgeOptions();
+    } else if (browser.equalsIgnoreCase("edge")) {
 
-			edgeOptions.addArguments("--start-maximized");
-			edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        EdgeOptions edgeOptions = new EdgeOptions();
 
-			options = edgeOptions;
+        edgeOptions.addArguments("--start-maximized");
+        edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
-		} else
-			throw new RuntimeException("Unkown browser " + browser);
+        options = edgeOptions;
 
-		if (options instanceof ChromeOptions)
-			driver = new ChromeDriver((ChromeOptions) options);
+    } else {
 
-		else if (options instanceof FirefoxOptions)
-			driver = new FirefoxDriver((FirefoxOptions) options);
+        throw new RuntimeException("Browser necunoscut: " + browser);
+    }
 
-		else if (options instanceof EdgeOptions)
-			driver = new EdgeDriver((EdgeOptions) options);
+    if (options instanceof ChromeOptions)
+        driver = new ChromeDriver((ChromeOptions) options);
 
-		return driver;
-	}
+    else if (options instanceof FirefoxOptions)
+        driver = new FirefoxDriver((FirefoxOptions) options);
+
+    else if (options instanceof EdgeOptions)
+        driver = new EdgeDriver((EdgeOptions) options);
+
+    return driver;
+}
 
 	public void closeBrowser(WebDriver d) {
 		if (d != null)
