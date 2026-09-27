@@ -45,7 +45,7 @@ public class ApplyLoanPage extends BasePage {
 	// Page Actions
 	public void clickApplyForLoanButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, applyForLoanBtn).click();
+		ElementWaits.waitForVisibility(driver, applyForLoanBtn).click();
 	}
 	 
 	public boolean isConfirmationLoanPannelDisplayed()
@@ -95,47 +95,47 @@ public class ApplyLoanPage extends BasePage {
 	 
 	public void clickSubmitButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, submitButton).click();
+		ElementWaits.waitForVisibility(driver, submitButton).click();
 	}
 	 
 	public void clickReviewLoanButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, reviewLoanBtn).click();
+		ElementWaits.waitForVisibility(driver, reviewLoanBtn).click();
 	}
 	 
 	public void selectDisbursmentAccOption()
 	{
-		ElementWaits.waitToBeInteractable(driver, disbursemntAccOption).click();
+		ElementWaits.waitForVisibility(driver, disbursemntAccOption).click();
 	}
 	 
 	public void clickSelectLoanTypeButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, selectLoanTypeBtn).click();
+		ElementWaits.waitForVisibility(driver, selectLoanTypeBtn).click();
 	}
 	 
 	public void clickSelectDisbursmentAccountButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, selectDisbursmentAccBtn).click();
+		ElementWaits.waitForVisibility(driver, selectDisbursmentAccBtn).click();
 	}
 	 
 	public void enterLoanAmount(String amount)
 	{
-		ElementWaits.waitToBeInteractable(driver, loanAmountInputBox).sendKeys(amount);
+		ElementWaits.waitForVisibility(driver, loanAmountInputBox).sendKeys(amount);
 	}
 
 	public void enterLoanReason(String purpose)
 	{
-		ElementWaits.waitToBeInteractable(driver, loanPurposeInputBox).sendKeys(purpose);
+		ElementWaits.waitForVisibility(driver, loanPurposeInputBox).sendKeys(purpose);
 	}
 	 
 	public void enterInterestRate(String interestRate)
 	{
-		ElementWaits.waitToBeInteractable(driver, loanInterestRateInputBox).sendKeys(interestRate);
+		ElementWaits.waitForVisibility(driver, loanInterestRateInputBox).sendKeys(interestRate);
 	}
 	 
 	public void waitForApplyLoantPannelToBeLoaded()
 	{
-		ElementWaits.waitToBeInteractable(driver, applyLoanPannel);
+		ElementWaits.waitForVisibility(driver, applyLoanPannel);
 	}
 	 
 	public void selectLoanTypeOption(String loanType)

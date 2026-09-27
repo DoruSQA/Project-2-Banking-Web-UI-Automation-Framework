@@ -35,24 +35,24 @@ public class LoginPage extends BasePage {
 		
 	private void waitForLoginPannelToBeLoaded()
 	{
-		ElementWaits.waitToBeInteractable(driver, loginPannel);
+		ElementWaits.waitForVisibility(driver, loginPannel);
 
 	}
 	
 	public void enterPassword(String password) {
 		
 		clearFieldBox(passwordInputBox);
-		ElementWaits.waitToBeInteractable(driver, passwordInputBox).sendKeys(password);
+		ElementWaits.waitForVisibility(driver, passwordInputBox).sendKeys(password);
 	}
 
 	public void clickLogin() {
 
-		ElementWaits.waitToBeInteractable(driver, loginButton).click();
+		ElementWaits.waitForVisibility(driver, loginButton).click();
 	}
 
 	public boolean isLoginButtonVisible() {
 
-		return ElementWaits.waitToBeInteractable(driver, loginButton).isDisplayed();
+		return ElementWaits.waitForVisibility(driver, loginButton).isDisplayed();
 	}
 
 	public void navigateTo(String url) {
@@ -62,7 +62,7 @@ public class LoginPage extends BasePage {
 
 	public String getFailedLoginErrorMessage() {
 
-		return  ElementWaits.waitToBeInteractable(driver, failedLoginErrorMessage).getText();
+		return  ElementWaits.waitForVisibility(driver, failedLoginErrorMessage).getText();
 	}
 
 	// Page Behavior

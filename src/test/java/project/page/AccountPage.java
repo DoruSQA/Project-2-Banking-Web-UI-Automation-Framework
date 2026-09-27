@@ -70,22 +70,22 @@ public class AccountPage extends BasePage {
 	
 	public String getCreatedBankingAccountName()
 	{
-		return ElementWaits.waitToBeInteractable(driver, createdBankingAccountName).getText();
+		return ElementWaits.waitForVisibility(driver, createdBankingAccountName).getText();
 	}
 
 	public String getCreatedBankingAccountType()
 	{
-		return ElementWaits.waitToBeInteractable(driver, createdBankingAccountType).getText();
+		return ElementWaits.waitForVisibility(driver, createdBankingAccountType).getText();
 	}
 
 	public String getCreatedBankingAccountBalance()
 	{
-		return ElementWaits.waitToBeInteractable(driver, createdBankingAccountBalance).getText();
+		return ElementWaits.waitForVisibility(driver, createdBankingAccountBalance).getText();
 	}
 	
 	public void waitForFormPannelToBeLoaded()
 	{
-		ElementWaits.waitToBeInteractable(driver, formPannel);
+		ElementWaits.waitForVisibility(driver, formPannel);
 	}
 	
 	public void waitForBankingAccountsPannelToBeLoaded()

@@ -47,27 +47,27 @@ public class BillPaymentPage extends BasePage {
 	// Page Actions
 	public void waitForBillPaymentPannelToBeLoaded()
 	{
-		ElementWaits.waitToBeInteractable(driver, billPaymentPannel);
+		ElementWaits.waitForVisibility(driver, billPaymentPannel);
 	}
 	 
 	public String getSelectedPaymentAccount()
 	{
-		return ElementWaits.waitToBeInteractable(driver, paymentAccount).getText();
+		return ElementWaits.waitForVisibility(driver, paymentAccount).getText();
 	}
 	 
 	public String getBillPayErrorMessage()
 	{
-		return ElementWaits.waitToBeInteractable(driver, billPayErrorMsg).getText();
+		return ElementWaits.waitForVisibility(driver, billPayErrorMsg).getText();
 	}
 	 
 	public String getSelectedPaymentBiller()
 	{
-		return ElementWaits.waitToBeInteractable(driver, paymetBiller).getText();
+		return ElementWaits.waitForVisibility(driver, paymetBiller).getText();
 	}
 	 
 	public String getSelectedPaymentAmount()
 	{
-		return ElementWaits.waitToBeInteractable(driver,paymentAmount ).getText();
+		return ElementWaits.waitForVisibility(driver,paymentAmount ).getText();
 	}
 
 	public boolean isPaymentReceipePannelDisplayed()
@@ -90,32 +90,32 @@ public class BillPaymentPage extends BasePage {
 	 
 	public void clickBillInputBox()
 	{
-		ElementWaits.waitToBeInteractable(driver,billerLabel).click();
+		ElementWaits.waitForVisibility(driver,billerLabel).click();
 	}
 	 
 	public void clickConfirmPaymentButton()
 	{
-		ElementWaits.waitToBeInteractable(driver,confirmPaymentBtn).click();
+		ElementWaits.waitForVisibility(driver,confirmPaymentBtn).click();
 	}
 	 
 	public void clickReviewPaymentButton()
 	{
-		ElementWaits.waitToBeInteractable(driver,reviewPaymentBtn).click();
+		ElementWaits.waitForVisibility(driver,reviewPaymentBtn).click();
 	}
 	 
 	public void enterBillAmount(String amount)
 	{
-		ElementWaits.waitToBeInteractable(driver,billAmountInputBox).sendKeys(amount);
+		ElementWaits.waitForVisibility(driver,billAmountInputBox).sendKeys(amount);
 	}
 	 
 	public void enterPaymentDate(String date)
 	{
-		ElementWaits.waitToBeInteractable(driver,paymentDate).sendKeys(date);
+		ElementWaits.waitForVisibility(driver,paymentDate).sendKeys(date);
 	}
 	 
 	public void clickFromAccount()
 	{
-		ElementWaits.waitToBeInteractable(driver,fromAccountLabel).click();
+		ElementWaits.waitForVisibility(driver,fromAccountLabel).click();
 	}
 	 
 	public void selectBankingAccountOption(String accountType)

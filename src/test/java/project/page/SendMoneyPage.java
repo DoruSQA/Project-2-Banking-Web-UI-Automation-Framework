@@ -59,22 +59,22 @@ public class SendMoneyPage extends BasePage {
 
 	public String getSendMoneyAccountName()
 	{
-		return ElementWaits.waitToBeInteractable(driver, sendMoneyAccount).getText();
+		return ElementWaits.waitForVisibility(driver, sendMoneyAccount).getText();
 	}
 	 
 	public String getSendMoneyErrorMsg()
 	{
-		return ElementWaits.waitToBeInteractable(driver, sendMoneyErrorMessage).getText();
+		return ElementWaits.waitForVisibility(driver, sendMoneyErrorMessage).getText();
 	}
 	 
 	public String getSendMoneyPayeeName()
 	{
-		return ElementWaits.waitToBeInteractable(driver, sendMoneyPayee).getText();
+		return ElementWaits.waitForVisibility(driver, sendMoneyPayee).getText();
 	}
 	 
 	public String getSendMoneyAmount()
 	{
-		return ElementWaits.waitToBeInteractable(driver, sendMoneyAmount).getText();
+		return ElementWaits.waitForVisibility(driver, sendMoneyAmount).getText();
 	}
 	 
 	 
@@ -85,7 +85,7 @@ public class SendMoneyPage extends BasePage {
 	 
 	public void clickSendButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, reviewSendBtn).click();
+		ElementWaits.waitForVisibility(driver, reviewSendBtn).click();
 	}
 	 
 	public void selecPayeeOption(String payeeName)
@@ -95,7 +95,7 @@ public class SendMoneyPage extends BasePage {
 	 
 	public void enterAmount(String amount)
 	{
-		ElementWaits.waitToBeInteractable(driver, amountInputBox).sendKeys(amount);
+		ElementWaits.waitForVisibility(driver, amountInputBox).sendKeys(amount);
 	}
 	 
 	public boolean isConfirmationPannelDisplayed()
@@ -113,22 +113,22 @@ public class SendMoneyPage extends BasePage {
 	 
 	public void waitForSendMoneyPannelToBeLoaded()
 	{
-		ElementWaits.waitToBeInteractable(driver, sendMoneyPannel);
+		ElementWaits.waitForVisibility(driver, sendMoneyPannel);
 	}
 	 
 	public void clickSelectAccountField()
 	{
-		ElementWaits.waitToBeInteractable(driver, selectAccountField).click();
+		ElementWaits.waitForVisibility(driver, selectAccountField).click();
 	}
 	 
 	public void clickAcceptConfirmationButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, acceptConfirmationButton).click();
+		ElementWaits.waitForVisibility(driver, acceptConfirmationButton).click();
 	}
 	 
 	public void clickSelectPayeeField()
 	{
-		ElementWaits.waitToBeInteractable(driver, selectPayeeField).click();
+		ElementWaits.waitForVisibility(driver, selectPayeeField).click();
 	}
 
 	// Page Behavior

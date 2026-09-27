@@ -35,7 +35,7 @@ public class TransactionPage extends BasePage {
 	 
 	public void waitForTablePannelToUpdate()
 	{
-		ElementWaits.waitToBeInteractable(driver, tablePannel);
+		ElementWaits.waitForVisibility(driver, tablePannel);
 	}
 
 	public String getTransactionDescriptionName()

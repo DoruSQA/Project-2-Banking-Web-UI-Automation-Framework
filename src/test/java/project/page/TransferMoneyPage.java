@@ -51,27 +51,27 @@ public class TransferMoneyPage extends BasePage {
 	// Page Actionn
 	public String getTransferPayerName()
 	{
-		return ElementWaits.waitToBeInteractable(driver, transferPayerName).getText();
+		return ElementWaits.waitForVisibility(driver, transferPayerName).getText();
 	}
 
 	public String getTransferErrorMsg()
 	{
-		return ElementWaits.waitToBeInteractable(driver, transferErrorMsg).getText();
+		return ElementWaits.waitForVisibility(driver, transferErrorMsg).getText();
 	}
 
 	public String getTransferPayeeName()
 	{
-		return ElementWaits.waitToBeInteractable(driver, transferPayeeName).getText();
+		return ElementWaits.waitForVisibility(driver, transferPayeeName).getText();
 	}
 
 	public String getTransferAmount()
 	{
-		return ElementWaits.waitToBeInteractable(driver, transferAmount).getText();
+		return ElementWaits.waitForVisibility(driver, transferAmount).getText();
 	}
 	 
 	public void waitForTransferMoneyPannelToBeLoaded()
 	{
-		ElementWaits.waitToBeInteractable(driver, transferMoneyPannel);
+		ElementWaits.waitForVisibility(driver, transferMoneyPannel);
 	}
 	 
 	public boolean isConfirmationPannelDisplayed()
@@ -88,22 +88,22 @@ public class TransferMoneyPage extends BasePage {
 
 	public void clickConfirmTransferButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, confirmTransferBtn).click();
+		ElementWaits.waitForVisibility(driver, confirmTransferBtn).click();
 	}
 	 
 	public void clickReviewTransferButton()
 	{
-		ElementWaits.waitToBeInteractable(driver, reviewTransferBtn).click();
+		ElementWaits.waitForVisibility(driver, reviewTransferBtn).click();
 	}
 	 
 	public void enterDate(String date)
 	{
-		ElementWaits.waitToBeInteractable(driver, dateInputBox).sendKeys(date);
+		ElementWaits.waitForVisibility(driver, dateInputBox).sendKeys(date);
 	}
 	 
 	public void clickSelectedDateOption(String dateOption) // today or scheduled
 	{
-		ElementWaits.waitToBeInteractable(driver, dateOptionLocator(dateOption)).click();
+		ElementWaits.waitForVisibility(driver, dateOptionLocator(dateOption)).click();
 	}
 	 
 	public void selectPayerOption(String selectedAccount)
@@ -123,12 +123,12 @@ public class TransferMoneyPage extends BasePage {
 	 
 	public void clickSelectPayerAccountField()
 	{
-		ElementWaits.waitToBeInteractable(driver, selectPayerAccountFiled).click();
+		ElementWaits.waitForVisibility(driver, selectPayerAccountFiled).click();
 	}
 	 
 	public void clickSelectPayeeAccountField()
 	{
-		ElementWaits.waitToBeInteractable(driver, selectPayeeAccountFiled).click();
+		ElementWaits.waitForVisibility(driver, selectPayeeAccountFiled).click();
 	}
 	 
 	// Page Behavior
