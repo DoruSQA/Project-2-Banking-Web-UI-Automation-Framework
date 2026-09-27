@@ -4,7 +4,7 @@
 ![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium)
 ![TestNG](https://img.shields.io/badge/TestNG-testing-red)
 ![Maven](https://img.shields.io/badge/Maven-build-blue?logo=apachemaven)
-![CI](https://github.com/DoruSQA/Project-2-Banking-Web-UI-Automation-Framework/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/DoruSQA/Project-2-Banking-Web-UI-Automation-Framework/actions/workflows/manual-module-testing.yml/badge.svg)
 
 > **Note:** This project is part of my personal QA Automation portfolio.
 
