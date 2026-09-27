@@ -41,6 +41,7 @@
 | Extent Reports | Test reporting | 
 | Logback | Test logging and tracking | 
 | Maven | Dependency and build management |
+| GitHub Actions | Continuous Integration (CI) |
 
 
 ## ✨ Framework Features
