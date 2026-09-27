@@ -9,8 +9,6 @@
 
 > **Note:** Some reusable framework components are maintained in a private utility library and are intentionally excluded from this public repository.
 
-<a id="top"></a>
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -219,4 +217,3 @@ The main focus of this project was to demonstrate a solid understanding of core 
 practical application within a structured, generic, and configurable framework.
 
 **Author:** [DoruSQA](https://github.com/DoruSQA) | [LinkedIn](https://www.linkedin.com/in/sava-doru/)
-<p align="right"><a href="#top">⬆️ Back to Top</a></p>

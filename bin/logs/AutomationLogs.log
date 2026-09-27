@@ -1,0 +1,249 @@
+2026-08-15 16:38:16 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:38:21 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:38:22 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:38:23 INFO  project.tests.BillPaymentTests - ========== START TC_BP_001_payBillWithValidDetails ==========
+2026-08-15 16:38:23 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-08-15 16:38:25 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-08-15 16:38:26 INFO  project.tests.BillPaymentTests - ========== SUCCESS TC_BP_001_payBillWithValidDetails ==========
+2026-08-15 16:38:26 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:38:29 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:38:30 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:38:32 INFO  project.tests.CreateBankingAccountTests - ========== START TC_BA_001_createBankingAccountWithValidDetails ==========
+2026-08-15 16:38:32 INFO  project.page.AccountPage - Filling banking account details
+2026-08-15 16:38:33 INFO  project.page.AccountPage - Banking account details filled successfully
+2026-08-15 16:38:34 INFO  project.tests.CreateBankingAccountTests - ========== SUCCESS TC_BA_001_createBankingAccountWithValidDetails ==========
+2026-08-15 16:38:34 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:38:37 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:38:38 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:38:39 INFO  project.tests.LoanFeatureTests - ========== START TC_LOAN_001_applyForLoanWithValidDetails ==========
+2026-08-15 16:38:39 INFO  project.page.ApplyLoanPage - Starting to fill loan details
+2026-08-15 16:38:42 INFO  project.page.ApplyLoanPage - Loan details filled successfully
+2026-08-15 16:38:43 INFO  project.tests.LoanFeatureTests - ========== SUCCESS TC_LOAN_001_applyForLoanWithValidDetails ==========
+2026-08-15 16:38:43 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:38:45 INFO  project.tests.LoginTests - ========== START TC_LOGIN_001_loginWithValidCredentials ==========
+2026-08-15 16:38:45 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:38:47 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:38:48 INFO  project.tests.LoginTests - ========== SUCCESS TC_LOGIN_001_loginWithValidCredentials ==========
+2026-08-15 16:38:48 INFO  project.tests.LoginTests - ========== START TC_LOGIN_008_logoutSuccessfully ==========
+2026-08-15 16:38:48 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:38:49 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:38:52 INFO  project.tests.LoginTests - ========== SUCCESS TC_LOGIN_008_logoutSuccessfully ==========
+2026-08-15 16:38:52 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:38:55 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:38:56 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:38:57 INFO  project.tests.SearchTransactionTests - ========== START TC_T_001_searchTransactionByDescription ==========
+2026-08-15 16:38:58 INFO  project.tests.SearchTransactionTests - ========== SUCCESS TC_T_001_searchTransactionByDescription ==========
+2026-08-15 16:38:58 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:39:01 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:39:02 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:39:03 INFO  project.tests.SendMoneyTests - ========== START TC_SM_001_sendMoneyWithValidDetails ==========
+2026-08-15 16:39:03 INFO  project.page.SendMoneyPage - Starting to fill Send Money details
+2026-08-15 16:39:04 INFO  project.page.SendMoneyPage - Send Money details filled successfully
+2026-08-15 16:39:06 INFO  project.tests.SendMoneyTests - ========== SUCCESS TC_SM_001_sendMoneyWithValidDetails ==========
+2026-08-15 16:39:06 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-08-15 16:39:08 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-08-15 16:39:09 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-08-15 16:39:10 INFO  project.tests.TransferFundsTests - ========== START TC_TF_001_transferMoneyWithValidDetails ==========
+2026-08-15 16:39:10 INFO  project.page.TransferMoneyPage - Starting to fill Transfer Money details
+2026-08-15 16:39:12 INFO  project.page.TransferMoneyPage - Transfer Money details filled successfully
+2026-08-15 16:39:13 INFO  project.tests.TransferFundsTests - ========== SUCCESS TC_TF_001_transferMoneyWithValidDetails ==========
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:53 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 43 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 9 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 12 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\User\AppData\Local\Temp\testng-eclipse--845919521\testng-customsuite.xml
+
+2026-09-21 16:41:54 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 25 ms.
+2026-09-21 16:41:54 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:42:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@410e94e: 185 ms
+2026-09-21 16:42:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@bf71cec: 88 ms
+2026-09-21 16:42:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@2c383e33: 41 ms
+2026-09-21 16:42:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3ae66c85: 23 ms
+2026-09-21 16:42:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@367795c7: 27 ms
+2026-09-21 16:42:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@d2387c8: 0 ms
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 62 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 37 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 13 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\User\AppData\Local\Temp\testng-eclipse--974735426\testng-customsuite.xml
+
+2026-09-21 16:45:17 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 12 ms.
+2026-09-21 16:45:17 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:45:23 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2d140a7: 363 ms
+2026-09-21 16:45:23 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@19542407: 99 ms
+2026-09-21 16:45:24 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@1adb7478: 45 ms
+2026-09-21 16:45:24 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@673bb956: 20 ms
+2026-09-21 16:45:24 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7d0332e1: 53 ms
+2026-09-21 16:45:24 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7a356a0d: 0 ms
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 31 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 34 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\User\AppData\Local\Temp\testng-eclipse-355603677\testng-customsuite.xml
+
+2026-09-21 16:45:59 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 12 ms.
+2026-09-21 16:46:00 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:46:08 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:46:12 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:46:14 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-09-21 16:46:17 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-09-21 16:46:29 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:46:30 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:46:31 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-09-21 16:46:34 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-09-21 16:46:46 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:46:47 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:46:49 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-09-21 16:46:51 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-09-21 16:47:02 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:47:03 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:47:04 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-09-21 16:47:06 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-09-21 16:47:17 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:47:19 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:47:20 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-09-21 16:47:22 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-09-21 16:47:33 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:47:34 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:47:35 INFO  project.page.BillPaymentPage - Starting to fill bill payment details without providing receiver account
+2026-09-21 16:47:37 INFO  project.page.BillPaymentPage - Bill payment details without receiver account filled successfully
+2026-09-21 16:47:48 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:47:50 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:47:51 INFO  project.page.BillPaymentPage - Starting to fill bill payment details without providing banking account
+2026-09-21 16:47:52 INFO  project.page.BillPaymentPage - Bill payment details without banking account filled successfully
+2026-09-21 16:48:04 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@185339ed: 266 ms
+2026-09-21 16:48:05 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@fb5d334: 81 ms
+2026-09-21 16:48:05 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@1eb6037d: 80 ms
+2026-09-21 16:48:05 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@299eca90: 14 ms
+2026-09-21 16:48:05 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@13374ca6: 22 ms
+2026-09-21 16:48:05 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@71734463: 0 ms
+2026-09-21 16:53:42 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:53:47 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:53:49 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:53:50 INFO  project.tests.BillPaymentTests - ========== START TC_BP_001: Pay bill with valid details ==========
+2026-09-21 16:53:50 INFO  project.page.BillPaymentPage - Starting to fill bill payment details
+2026-09-21 16:53:53 INFO  project.page.BillPaymentPage - Bill payment details filled successfully
+2026-09-21 16:53:54 INFO  project.tests.BillPaymentTests - ========== SUCCESS TC_BP_001: Pay bill with valid details ==========
+2026-09-21 16:53:55 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:53:57 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:53:59 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:01 INFO  project.tests.CreateBankingAccountTests - ========== START TC_BA_001: Create banking account with valid details ==========
+2026-09-21 16:54:02 INFO  project.page.AccountPage - Filling banking account details
+2026-09-21 16:54:03 INFO  project.page.AccountPage - Banking account details filled successfully
+2026-09-21 16:54:04 INFO  project.tests.CreateBankingAccountTests - ========== SUCCESS TC_BA_001: Create banking account with valid details ==========
+2026-09-21 16:54:05 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:54:07 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:54:09 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:11 INFO  project.tests.LoanFeatureTests - ========== START TC_LOAN_001: Apply for loan with valid details ==========
+2026-09-21 16:54:11 INFO  project.page.ApplyLoanPage - Starting to fill loan details
+2026-09-21 16:54:15 INFO  project.page.ApplyLoanPage - Loan details filled successfully
+2026-09-21 16:54:16 INFO  project.tests.LoanFeatureTests - ========== SUCCESS TC_LOAN_001: Apply for loan with valid details ==========
+2026-09-21 16:54:17 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:54:19 INFO  project.tests.LoginTests - ========== START TC_LOGIN_001: Login with valid credentials ==========
+2026-09-21 16:54:19 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:54:21 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:23 INFO  project.tests.LoginTests - ========== SUCCESS TC_LOGIN_001: Login with valid credentials ==========
+2026-09-21 16:54:23 INFO  project.tests.LoginTests - ========== START TC_LOGIN_008: Logout successfully ==========
+2026-09-21 16:54:23 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:54:24 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:27 INFO  project.tests.LoginTests - ========== SUCCESS TC_LOGIN_008: Logout successfully ==========
+2026-09-21 16:54:28 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:54:30 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:54:33 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:34 INFO  project.tests.SearchTransactionTests - ========== START TC_T_001: Search transaction by description ==========
+2026-09-21 16:54:36 INFO  project.tests.SearchTransactionTests - ========== SUCCESS TC_T_001: Search transaction by description ==========
+2026-09-21 16:54:36 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:54:39 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:54:41 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:42 INFO  project.tests.SendMoneyTests - ========== START TC_CART_001: Send money with valid details ==========
+2026-09-21 16:54:42 INFO  project.page.SendMoneyPage - Starting to fill Send Money details
+2026-09-21 16:54:44 INFO  project.page.SendMoneyPage - Send Money details filled successfully
+2026-09-21 16:54:46 INFO  project.tests.SendMoneyTests - ========== SUCCESS TC_CART_001: Send money with valid details ==========
+2026-09-21 16:54:46 INFO  project.base.BaseTest - Creating WebDriver instance
+2026-09-21 16:54:48 INFO  project.page.LoginPage - Starting authentication for user: standard_user
+2026-09-21 16:54:51 INFO  project.page.LoginPage - Authentication flow completed for user: standard_user
+2026-09-21 16:54:52 INFO  project.tests.TransferFundsTests - ========== START TC_TF_001: Transfer money with valid details ==========
+2026-09-21 16:54:52 INFO  project.page.TransferMoneyPage - Starting to fill Transfer Money details
+2026-09-21 16:54:55 INFO  project.page.TransferMoneyPage - Transfer Money details filled successfully
+2026-09-21 16:54:56 INFO  project.tests.TransferFundsTests - ========== SUCCESS TC_TF_001: Transfer money with valid details ==========
