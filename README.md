@@ -7,10 +7,9 @@
 ![Maven](https://img.shields.io/badge/Maven-build-blue?logo=apachemaven)
 ![CI](https://github.com/DoruSQA/Project-2-Banking-Web-UI-Automation-Framework/actions/workflows/manual-module-testing.yml/badge.svg)
 
-> **Note:** This project is part of my personal QA Automation portfolio.
 
-> **Note:** Some reusable framework components are maintained and included as a local JAR dependency.
-
+> **Note 1:** Some reusable framework components are maintained and included as a local JAR dependency.
+> **Note 2:** This project is part of my personal QA Automation portfolio.
 
 ## Table of Contents
 
