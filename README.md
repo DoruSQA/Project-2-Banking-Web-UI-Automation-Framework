@@ -51,9 +51,8 @@
 - **Element Waits:** Custom wait mechanisms for reliable interaction with web elements.
 - **Test Reporting:** Detailed reports using Extent Reports.
 - **Execution Logging:** Structured execution logs using Logback.
-- **GitHub Actions CI:** Two workflows for automated test execution — one manually triggered and one triggered on Pull Requests.
 - Test execution control through **Maven parameters**
-
+- **GitHub Actions CI:** Two workflows for automated test execution — one manually triggered and one triggered on Pull Requests.
 
 
 <a id="framework-architecture"></a>
