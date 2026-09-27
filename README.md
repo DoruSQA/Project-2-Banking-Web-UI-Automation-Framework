@@ -88,7 +88,7 @@ mvn clean test
 # Smoke Tests (8 tests)
 mvn clean test -DtestSuite=Smoke
 
-# Regression Tests (6 tests)  
+# Test Module: Banking Account (6 tests) 
 mvn clean test -DtestSuite="Banking Account"
 ```
 ### Run Tests with different environments
