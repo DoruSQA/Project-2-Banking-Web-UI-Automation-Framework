@@ -8,7 +8,7 @@
 		<env>qa</env>
 		<suiteXmlFile>suites/masterSuite.xml</suiteXmlFile>
 		<threads>1</threads>
-		<testSuite>Smoke</testSuite>
+		<testSuite>Regression</testSuite>
 		<browserName>chrome</browserName>
 		<username>defaultUsername</username>
 		<password>defaultPassword</password>

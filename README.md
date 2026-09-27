@@ -78,18 +78,18 @@ maintainability, reusability, and separation of concerns.
 ### Run All Tests (Default - Smoke Suite)
 
 ```bash
-# All Tests (40 tests)
+# All Tests (43 tests)
 mvn clean test
 ```
 
 ### Run Specific Test Suite
 
 ```bash
-# Smoke Tests (7 tests)
+# Smoke Tests (8 tests)
 mvn clean test -DtestSuite=Smoke
 
-# Regression Tests (14 tests)  
-mvn clean test -DtestSuite=Regression
+# Regression Tests (6 tests)  
+mvn clean test -DtestSuite="Banking Account"
 ```
 ### Run Tests with different environments
 
