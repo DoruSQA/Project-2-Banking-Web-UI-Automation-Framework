@@ -45,13 +45,15 @@
 ## ✨ Framework Features
 
 - **Cross-Browser testing:** Support for Chrome, Firefox and Edge browsers.
-- **Cross-Suite execution:** Run tests with different tags: smoke, regression, etc.
-- **Multi-Environment Support:** Multiple environments (qa, staging, prod) with easy switching.
+- **Cross-Suite execution:** Run tests by TestNG groups: smoke, regression, etc.
+- **Multi-Environment Support:** Multiple environments (qa, staging) with easy switching.
 - **Sequential and parallel execution:** Run tests sequentially or in parallel.
 - **Element Waits:** Custom wait mechanisms for reliable interaction with web elements.
 - **Test Reporting:** Detailed reports using Extent Reports.
 - **Execution Logging:** Structured execution logs using Logback.
+- **GitHub Actions CI:** Two workflows for automated test execution — one manually triggered and one triggered on Pull Requests.
 - Test execution control through **Maven parameters**
+
 
 
 <a id="framework-architecture"></a>
@@ -131,7 +133,7 @@ Test execution reports are generated using Extent Reports and located in the `re
 Execution logs are generated using Logback and SLF4J and located in the `logs/` directory.
 
 <details>
-<summary>📊 <strong>Logs Preview</strong></summary>
+<summary>📝 <strong>Logs Preview</strong></summary>
 
 <br>
 
