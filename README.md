@@ -53,7 +53,7 @@
 
 - **Cross-Browser testing:** Support for Chrome, Firefox and Edge browsers.
 - **Cross-Suite execution:** Run tests with different tags: smoke, regression, etc.
-- **Multi-Environment Support:** Multiple environments (dev, qa, staging, prod) with easy switching.
+- **Multi-Environment Support:** Multiple environments (qa, staging, prod) with easy switching.
 - **Sequential and parallel execution:** Run tests sequentially or in parallel.
 - **Element Waits:** Custom wait mechanisms for reliable interaction with web elements.
 - **Test Reporting:** Detailed reports using Extent Reports.
