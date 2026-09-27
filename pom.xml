@@ -13,7 +13,7 @@
 		<username>defaultUsername</username>
 		<password>defaultPassword</password>
 	</properties>
-
+	
 	<dependencies>
 
 		<!-- Selenium -->
@@ -59,12 +59,13 @@
 			<version>2.13.1</version>
 		</dependency>
 		
-		<!-- DoruSQA private test utilities -->
-		<dependency>
-			<groupId>DoruSQA-Test-utilities</groupId>
-			<artifactId>DoruSQA-Test-utilities</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+	<dependency>
+		<groupId>DoruSQA-Test-utilities</groupId>
+		<artifactId>DoruSQA-Test-utilities</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/DoruSQA-Test-utilities-0.0.1-SNAPSHOT.jar</systemPath>
+	</dependency>
 
 	</dependencies>
 

@@ -1,3 +1,4 @@
+<a id="top"></a>
 # 🏦 Project 2 – Banking-App UI Testing Automation Framework
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
@@ -8,9 +9,8 @@
 
 > **Note:** This project is part of my personal QA Automation portfolio.
 
-> **Note:** Some reusable framework components are maintained in a private utility library and are intentionally excluded from this public repository.
+> **Note:** Some reusable framework components are maintained in a private utility library.
 
-<a id="top"></a>
 
 ## Table of Contents
 
