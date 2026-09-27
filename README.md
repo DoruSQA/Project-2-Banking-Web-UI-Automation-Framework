@@ -52,7 +52,7 @@
 - **Test Reporting:** Detailed reports using Extent Reports.
 - **Execution Logging:** Structured execution logs using Logback.
 - Test execution control through **Maven parameters**
-- **GitHub Actions CI:** Two workflows for automated test execution — one manually triggered and one triggered on Pull Requests.
+- **GitHub Actions CI:** Two workflows for automated test execution (one manually triggered and one triggered on Pull Requests).
 
 
 <a id="framework-architecture"></a>
