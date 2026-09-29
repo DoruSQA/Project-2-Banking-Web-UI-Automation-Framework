@@ -26,8 +26,18 @@
 
 ## 📖 Overview 
 
-- This automation framework is built using Java, Selenium WebDriver, TestNG, Maven, Gson, Logback and Extent Reports.
-- The framework automates Authentication, Banking Account Management, Funds Management, Bill Payments, Transaction and Loan Management workflows of the banking application.
+This project is built using Java, Selenium WebDriver, TestNG, Maven, Gson, Logback and Extent Reports.
+The framework automates the following modules:
+- Authentication
+- Banking Account Management
+- Funds Management
+- Bill Payments
+- Transaction
+- Loan Management 
+
+Both positive and negative scenarios are automated, including validation and boundary testing.
+
+---
 
 <a id="tech-stack"></a> 
 ## 🛠️ Tech Stack 
@@ -43,6 +53,7 @@
 | Maven | Dependency and build management |
 | GitHub Actions | Continuous Integration (CI) |
 
+---
 
 ## ✨ Framework Features
 
@@ -56,6 +67,7 @@
 - Test execution control through **Maven parameters**
 - **GitHub Actions CI:** Two workflows for automated test execution (one manually triggered and one triggered on Pull Requests).
 
+---
 
 <a id="framework-architecture"></a>
 ## 🏗️ Framework Architecture
@@ -72,6 +84,7 @@ maintainability, reusability, and separation of concerns.
 | Tests | Contains test cases organized by application feature |
 | Utils | Provides shared utilities for reporting, data reading, and custom element waits |
 
+---
 
 ## Test Execution
 
@@ -114,6 +127,8 @@ mvn clean test -DbrowserName=firefox
 mvn clean test -DbrowserName=edge
 ```
 
+---
+
 ## Reports and Logging
 
 ### Reports
@@ -142,6 +157,7 @@ Execution logs are generated using Logback and SLF4J and located in the `logs/` 
 
 </details>
 
+---
 
 ## Conclusion
 
