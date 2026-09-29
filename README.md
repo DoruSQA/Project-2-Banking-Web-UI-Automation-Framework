@@ -26,8 +26,8 @@
 
 ## 📖 Overview 
 
-This project is built using Java, Selenium WebDriver, TestNG, Maven, Gson, Logback and Extent Reports.
-The framework automates the following modules:
+This project is built using **Java,** **Selenium WebDriver,** **TestNG,** **Maven,** **Gson,** **Logback** and **Extent Reports.**
+The framework automates the following **modules:**
 - Authentication
 - Banking Account Management
 - Funds Management
